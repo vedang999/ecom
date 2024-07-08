@@ -1,0 +1,254 @@
+// styles/Product.module.scss
+
+.container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background: #ffffff;
+    // padding: 10px 20px;
+    .topBar {
+      display: flex;
+      justify-content: space-between;
+      background: #333;
+      color: white;
+      padding: 5px 10px;
+      p {
+        margin: 0;
+      }
+      select {
+        background: transparent;
+        border: none;
+        color: white;
+      }
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        li {
+          margin: 0 10px;
+        }
+      }
+      .searchCart {
+        display: flex;
+        align-items: center;
+        input {
+          padding: 5px;
+        }
+        button {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  
+  .main {
+    padding: 20px;
+    text-align: left; /* Ensure text content is aligned to the left */
+
+    .breadcrumb {
+      margin-bottom: 20px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 14px;
+    }
+    .product {
+      display: flex;
+      .imageGallery {
+        flex: 1;
+        .mainImage {
+          width: 45%;
+          margin: 0 auto; /* Center the element horizontally */
+          display: block;
+          padding-bottom: 20px;  
+        }
+        .thumbnails {
+          display: flex;
+          img {
+            width: 60px;
+            margin-left: 30px;
+          }
+        }
+      }
+      .details {
+        flex: 1;
+        padding: 20px;
+        text-align: left; /* Ensure text content is aligned to the left */
+
+        h2 {
+          margin: 0 0 10px;
+        }
+        .rating {
+          display: flex;
+          align-items: center;
+          span {
+            margin-right: 10px;
+          }
+          .inStock {
+            color: green;
+          }
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          .currentPrice {
+            font-size: 24px;
+            margin-right: 10px;
+          }
+          .originalPrice {
+            text-decoration: line-through;
+            margin-right: 10px;
+          }
+          .discount {
+            color: red;
+          }
+        }
+        .options {
+          display: flex;
+          font-size: 15px;
+          flex-direction: column;
+          // padding:20px;
+          // margin: 20px 0;
+          div {
+            margin-bottom: 0px;
+          }
+          .colorOption {
+            width: 20px;
+            height: 20px;
+            background: gray;
+            border: none;
+            margin-right: 10px;
+          }
+        }
+        .actions {
+          display: flex;
+          align-items: center;
+          .quantity {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            button {
+              width: 30px;
+              height: 30px;
+              border: none;
+            }
+            span {
+              margin: 0 10px;
+            }
+          }
+          .buyNow {
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+          }
+          .addToCart {
+            background: transparent;
+            border: none;
+            margin-left: 10px;
+          }
+        }
+        .delivery {
+          display: flex;
+          margin: 20px 0;
+          div {
+            margin-right: 20px;
+          }
+        }
+        .offers {
+          div {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .description {
+      margin: 20px 0;
+      button {
+        margin-right: 10px;
+      }
+    }
+    .reviews {
+      margin: 20px 0;
+      h3 {
+        margin-bottom: 10px;
+      }
+      div {
+        margin-bottom: 10px;
+      }
+    }
+    .relatedItems {
+      h3 {
+        margin-bottom: 20px;
+        font-size: 16px; /* Set text size to 16px */
+        color: red; /* Set text color to red */
+      }
+      h3 img {
+        height: 30px; /* Set the height of the image to match the text size */
+        vertical-align: middle; /* Align the image with the middle of the text */
+        margin-right: 8px; /* Add space between the image and the text */
+
+      }
+      
+      .items {
+        display: flex;
+        .item {
+          flex: 1;
+          margin-right: 10px;
+          img {
+            width: 100%;
+          }
+          p {
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    .footerContent {
+      display: flex;
+      justify-content: space-between;
+      div {
+        flex: 1;
+        margin-right: 20px;
+        h4 {
+          margin-bottom: 10px;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            margin-bottom: 5px;
+          }
+        }
+        input {
+          padding: 10px;
+          width: 80%;
+        }
+        button {
+          padding: 10px;
+          margin-top: 10px;
+        }
+        img {
+          width: 100px;
+          margin-right: 10px;
+        }
+        a {
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  
