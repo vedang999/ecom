@@ -6,10 +6,10 @@ import image4 from '../pics/image4.png';
 function ImageGallery() {
   const [mainImage, setMainImage] = useState(image1); // Replace with actual path to main image
   const [thumbnails, setThumbnails] = useState([
-    image1, // Replace with actual paths to thumbnail images
-    image2, // Replace with actual paths to thumbnail images
-    image3, // Replace with actual paths to thumbnail images
-    image4, 
+    image1,
+    image2,
+    image3,
+    image4,
   ]);
 
   const handleThumbnailClick = (thumbnail) => {

@@ -10,7 +10,7 @@
     .topBar {
       display: flex;
       justify-content: space-between;
-      background: #333;
+      background: #000000;
       color: white;
       padding: 5px 10px;
       p {
@@ -211,44 +211,66 @@
       }
     }
   }
-  
-  .footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    .footerContent {
-      display: flex;
-      justify-content: space-between;
-      div {
-        flex: 1;
-        margin-right: 20px;
-        h4 {
-          margin-bottom: 10px;
-        }
-        ul {
-          list-style: none;
-          padding: 0;
-          li {
-            margin-bottom: 5px;
-          }
-        }
-        input {
-          padding: 10px;
-          width: 80%;
-        }
-        button {
-          padding: 10px;
-          margin-top: 10px;
-        }
-        img {
-          width: 100px;
-          margin-right: 10px;
-        }
-        a {
-          display: inline-block;
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-  
+  /* Ensure Poppins font is imported if not already */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Apply Poppins font to all text in the footer */
+.footer {
+  background: #000000;
+  color: white;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to entire footer */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerContent div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footerContent div h4 {
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to headings */
+}
+
+.footerContent div ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerContent div ul li {
+  margin-bottom: 5px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to list items */
+}
+
+.footerContent div input {
+  padding: 10px;
+  width: 80%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to input fields */
+}
+
+.footerContent div button {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to buttons */
+}
+
+.footerContent div img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.footerContent div a {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to links */
+}

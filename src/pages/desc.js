@@ -9,7 +9,7 @@ function DescriptionToggle() {
 
   return (
     <div style={{ maxWidth: '90%', margin: '20px 0px' }}>
-      <h2 style={{ cursor: 'pointer', borderTop: '1px solid #ccc' }} onClick={toggleDescription}>
+      <h2 style={{ cursor: 'pointer', borderTop: '1px solid #ccc', fontSize: '20px' , color: '#831000' }} onClick={toggleDescription}>
         {isExpanded ? '- Description' : '+ Description'}
       </h2>
       {isExpanded && (

@@ -10,6 +10,8 @@ import rel2 from '../pics/rel2.png'; // adjust the path as necessary
 import rel3 from '../pics/rel3.png'; // adjust the path as necessary
 import rel4 from '../pics/rel4.png'; // adjust the path as necessary
 import red1 from '../pics/red1.png'; // adjust the path as necessary
+import download from '../pics/download.png'; // adjust the path as necessary
+import share from '../pics/share.png'; // adjust the path as necessary
 import policy from '../pics/policy.png'; // adjust the path as necessary
 import tag from '../pics/tag.jpg'; // adjust the path as necessary
 import Counter from './Counter';
@@ -22,6 +24,7 @@ import AddToCartButton from './Addtocart';
 import DescriptionToggle from './desc';
 import Info from './Info'
 import RnQ from './RnQ'
+import HeartButton from './HeartButton';
 const Product = () => {
   return (
     <div className={styles.container}>
@@ -57,15 +60,6 @@ const Product = () => {
           <div className={styles.imageGallery}>
             <div>Account /   Gaming /   Havic HV G-92 Gamepad</div>
         <ImageGallery />
-            {/* <img src={image1} alt="Product Image" className={styles.mainImage} />
-
-            <div className={styles.thumbnails}>
-              <img src={image2} alt="Thumbnail 2" />
-              <img src={image3} alt="Thumbnail 3" />
-              <img src={image4} alt="Thumbnail 4" />
-              <img src={image4} alt="Thumbnail 4" />
-              <img src={image4} alt="Thumbnail 4" />
-            </div> */}
           </div>
           <div className={styles.details}>
             <h2>Havic HV G-92 Gamepad</h2>
@@ -103,6 +97,7 @@ const Product = () => {
                 <AddToCartButton />
               </div>
             </div>
+            <HeartButton/>
               {/* <button className={styles.addToCart}>❤️</button> */}
             </div>
 
@@ -130,13 +125,7 @@ const Product = () => {
 
         </div>
         <RnQ/>
-        <div className={styles.reviews}>
-          <h3>Reviews(150)</h3>
-          <div>
-            <p>Q: Does it have warranty</p>
-            <p>A: Yes, for 6 months</p>
-          </div>
-        </div>
+
         <div className={styles.relatedItems}>
 
           <h3>
@@ -172,14 +161,25 @@ const Product = () => {
         <div className={styles.footerContent}>
           <div>
             <h4>Exclusive</h4>
+            <ul>
+              <li></li>
+              <li>
             <p>Get 10% off your first order</p>
+
+              <li>
+            <p>Subscribe</p>
+              </li>
+
             <input type="email" placeholder="Enter your email" />
-            <button>Subscribe</button>
+              </li>
+            </ul>
           </div>
           <div>
             <h4>Support</h4>
-            <p>exclusive@gmail.com</p>
-            <p>+88015-88888-9999</p>
+            <ul>
+            <li>exclusive@gmail.com</li>
+            <li>+88015-88888-9999</li>
+            </ul>
           </div>
           <div>
             <h4>Account</h4>
@@ -202,15 +202,16 @@ const Product = () => {
           </div>
           <div>
             <h4>Download App</h4>
-            <div>
-              <img src="/appstore.png" alt="App Store" />
-              <img src="/googleplay.png" alt="Google Play" />
-            </div>
-            <div>
-              <a href="#"><img src="/facebook.png" alt="Facebook" /></a>
-              <a href="#"><img src="/twitter.png" alt="Twitter" /></a>
-              <a href="#"><img src="/instagram.png" alt="Instagram" /></a>
-            </div>
+            <ul>
+              <li>
+
+              <img src={download} alt="App Store" style={{ height: '80px' ,width: "180px"}}/>
+              </li>
+              <li>
+
+            <img src={share} alt="App Store" style={{ height: '20px' }}/>
+              </li>
+            </ul>
           </div>
         </div>
       </footer>

@@ -9,7 +9,7 @@ function AdditionalInfoToggle() {
 
   return (
     <div style={{ maxWidth: '100%', margin: '20px 0px' }}>
-      <h2 style={{ cursor: 'pointer', borderTop: '1px solid #ccc' }} onClick={toggleInfo}>
+      <h2 style={{ cursor: 'pointer', borderTop: '1px solid #ccc' , fontSize: '20px', color: '#831000' }} onClick={toggleInfo}>
         {isExpanded ? '- Additional Information' : '+ Additional Information'}
       </h2>
       {isExpanded && (
