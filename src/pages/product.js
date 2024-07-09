@@ -20,7 +20,8 @@ import HeartButton from './HeartButton';
 import Related1 from './Related1';
 const Product = () => {
   return (
-    <div className={styles.container}>
+    // <div className={styles.container}>
+    <div>
       <header className={styles.header}>
         <div className={styles.topBar}>
           <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! ShopNow</p>
@@ -51,8 +52,10 @@ const Product = () => {
         <div className={styles.product}>
 
           <div className={styles.imageGallery}>
-            <div>Account /   Gaming /   Havic HV G-92 Gamepad</div>
-        <ImageGallery />
+            <div className={styles.breadcrumb}>Account /   Gaming /   Havic HV G-92 Gamepad</div>
+          <div className={`${styles.imageGallery} ${styles.dup}`}>
+            <ImageGallery />
+          </div>
           </div>
           <div className={styles.details}>
             <h2>Havic HV G-92 Gamepad</h2>
@@ -67,10 +70,14 @@ const Product = () => {
               <span className={styles.discount}>10% off</span>
             </div>
             <p>PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
+          <div className={`${styles.imageGallery} ${styles.og}`}>
+            <ImageGallery />
+          </div>
             <div className={styles.options}>
               <div>
                 <label style={{ display: 'flex', alignItems: 'center' }}>Colours:  <ColorRadioButtons />
                 </label>
+            {/* <HeartButton/> */}
 
               </div>
               <br/>
@@ -90,8 +97,6 @@ const Product = () => {
                 <AddToCartButton />
               </div>
             </div>
-            <HeartButton/>
-              {/* <button className={styles.addToCart}>❤️</button> */}
             </div>
 
             <div className={styles.delivery}>
@@ -151,7 +156,7 @@ const Product = () => {
             <p>Subscribe</p>
               </li>
 
-            <input type="email" placeholder="Enter your email" />
+            {/* <input type="email" placeholder="Enter your email" /> */}
               </li>
             </ul>
           </div>

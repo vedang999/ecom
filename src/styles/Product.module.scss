@@ -7,52 +7,113 @@
   .header {
     background: #ffffff;
     // padding: 10px 20px;
+    
     .topBar {
       display: flex;
       justify-content: space-between;
       background: #000000;
       color: white;
       padding: 5px 10px;
+      
       p {
         margin: 0;
       }
+      
       select {
         background: transparent;
         border: none;
         color: white;
       }
     }
+    
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      
       h1 {
         margin: 0;
       }
+      
       ul {
         list-style: none;
         display: flex;
+        
         li {
           margin: 0 10px;
         }
       }
+      
       .searchCart {
         display: flex;
         align-items: center;
+        
         input {
           padding: 5px;
         }
+        
         button {
           margin-left: 10px;
         }
       }
     }
+  
+    // Add media query for smaller screens
+    @media (max-width: 600px) {
+      .topBar {
+        align-items: flex-start;
+        
+        p {
+          font-size: 12px;
+          margin-bottom: 0px;
+        }
+        // option {
+        //   font-size: 12px;
+        // }
+        select {
+          display:none;
+          align-self: flex-end;
+        }
+      }
+      
+      .navbar {
+        // flex-direction: column;
+        display: none;
+        align-items: flex-start;
+        
+        h1 {
+          margin-bottom: 10px;
+        }
+        
+        ul {
+          flex-direction: column;
+          align-items: flex-start;
+          
+          li {
+            margin: 5px 0;
+          }
+        }
+        
+        .searchCart {
+          width: 100%;
+          input {
+            width: calc(100% - 20px);
+            margin-right: 10px;
+          }
+          
+          button {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
   }
+  
   
   .main {
     padding: 20px;
     text-align: left; /* Ensure text content is aligned to the left */
-
+    
     .breadcrumb {
       margin-bottom: 20px;
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -75,13 +136,34 @@
             margin-left: 30px;
           }
         }
+        &.og {
+          @media (max-width: 768px) {
+            display: block; /* Show on mobile */
+          }
+          
+          @media (min-width: 769px) {
+            display: none; /* Hide on larger screens */
+          }
+        }
+        
+        &.dup {
+          @media (max-width: 768px) {
+            display: none; /* Hide on mobile */
+          }
+          
+          @media (min-width: 769px) {
+            display: block; /* Show on larger screens */
+          }
+        }
       }
       .details {
         flex: 1;
         padding: 20px;
+        padding-top: 0%;
         text-align: left; /* Ensure text content is aligned to the left */
-
+        
         h2 {
+          font-size: 20px;
           margin: 0 0 10px;
         }
         .rating {
@@ -184,7 +266,6 @@
       }
     }
     .relatedItems {
-      
       h3 {
         margin-bottom: 20px;
         font-size: 16px; /* Set text size to 16px */
@@ -194,7 +275,7 @@
         height: 30px; /* Set the height of the image to match the text size */
         vertical-align: middle; /* Align the image with the middle of the text */
         margin-right: 8px; /* Add space between the image and the text */
-
+        
       }
       
       .items {
@@ -213,33 +294,34 @@
     }
   }
   /* Ensure Poppins font is imported if not already */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-/* Apply Poppins font to all text in the footer */
-.footer {
-  background: #000000;
-  color: white;
-  padding: 20px;
-  font-family: 'Poppins', sans-serif; /* Apply Poppins font to entire footer */
-}
-
-.footerContent {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footerContent div {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.footerContent div h4 {
-  margin-bottom: 10px;
-  text-align: left;
-  font-family: 'Poppins', sans-serif; /* Apply Poppins font to headings */
-}
-
-.footerContent div ul {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  
+  /* Apply Poppins font to all text in the footer */
+  .footer {
+    background: #000000;
+    color: white;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to entire footer */
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+      flex-wrap: wrap; /* Enable wrapping for responsiveness */
+  }
+  
+  .footerContent div {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footerContent div h4 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to headings */
+  }
+  
+  .footerContent div ul {
   list-style: none;
   padding: 0;
 }
@@ -274,4 +356,22 @@
   margin-right: 10px;
   text-align: left;
   font-family: 'Poppins', sans-serif; /* Apply Poppins font to links */
+}
+@media screen and (max-width: 768px) {
+  .footer{
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    padding: 0px;
+    .breadcrumb {
+      // display:none;
+      margin-bottom: 20px;
+      font-size: 10px;
+    }
+    .product {
+      display: block; /* Change to block layout for mobile */
+    }
+  }
 }

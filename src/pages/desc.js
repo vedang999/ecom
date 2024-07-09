@@ -13,7 +13,7 @@ function DescriptionToggle() {
         {isExpanded ? '- Description' : '+ Description'}
       </h2>
       {isExpanded && (
-        <p style={{ marginTop: '10px', lineHeight: '1.2' }}>
+        <p style={{ fontSize:'16px', marginTop: '10px', lineHeight: '1.2' }}>
           PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess
           free removal Pressure sensitive. PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for
           easy bubble free install & mess free removal Pressure sensitive. PlayStation 5 Controller Skin High quality

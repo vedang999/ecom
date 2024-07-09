@@ -14,11 +14,14 @@ function AdditionalInfoToggle() {
       </h2>
       {isExpanded && (
         <div style={{ marginTop: '10px', lineHeight: '1.2' }}>
-          <p><strong>SIZE:</strong> 13 UK</p>
-          <p><strong>MATERIAL:</strong> Cotton</p>
-          <p><strong>COMPANY OF ORIGIN:</strong> India</p>
-          <p>
-            PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess
+        <p style={{ fontSize:'16px', marginTop: '10px', lineHeight: '1.2' }}>
+        <strong>SIZE:</strong> 13 UK</p>
+          <p style={{ fontSize:'16px', marginTop: '10px', lineHeight: '1.2' }}>
+          <strong>MATERIAL:</strong> Cotton</p>
+          <p style={{ fontSize:'16px', marginTop: '10px', lineHeight: '1.2' }}>
+          <strong>COMPANY OF ORIGIN:</strong> India</p>
+          <p style={{ fontSize:'16px', marginTop: '10px', lineHeight: '1.2' }}>
+          PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess
             free removal Pressure sensitive. PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for
             easy bubble free install & mess free removal Pressure sensitive. PlayStation 5 Controller Skin High quality
             vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive. PlayStation

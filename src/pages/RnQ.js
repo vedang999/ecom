@@ -10,7 +10,7 @@ function TabToggle() {
   };
 
   return (
-    <div style={{ maxWidth: '90%', margin: '20px auto' }}>
+    <div style={{ maxWidth: '100%', margin: '20px auto' }}>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div
           onClick={() => handleTabClick('reviews')}
@@ -73,6 +73,8 @@ function TabToggle() {
           date="01/03/2024"
           reviewText="This item looks good..."
         />
+<div style={{ alignItems: "center", display: "flex",color:"coral" }}>View more</div>
+
         </div>
       )}
       {activeTab === 'qna' && (
@@ -98,7 +100,8 @@ function TabToggle() {
         likes={203}
         dislikes={19}
       />
-    </div>
+<div style={{ alignItems: "center", display: "flex",color:"coral" }}>View more</div>
+</div>
       )}
     </div>
   );

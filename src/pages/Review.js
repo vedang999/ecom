@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa'; // Using react-icons for the star icon
+import styles from '../styles/Review.module.scss'; // Adjust the path as necessary
 
 function Review({ profileImage, rating, accountName, date, reviewText }) {
   const stars = Array(5).fill(0).map((_, index) => (
@@ -7,27 +8,24 @@ function Review({ profileImage, rating, accountName, date, reviewText }) {
   ));
 
   return (
-    <div>
-    <div style={{ display: 'flex', marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid lightgrey'}}>
+    <div className={styles.reviewContainer}>
       <img
         src={profileImage}
         alt="Profile"
-        style={{ width: '70px', height: '70px', borderRadius: '5px', marginRight: '20px' }}
+        className={styles.profileImage}
       />
       <div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div className={styles.reviewHeader}>
           {stars}
-          <span style={{ marginLeft: '5px' }}>({rating})</span>
+          <span className={styles.ratingStars}>({rating})</span>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-          <span style={{ fontWeight: 'bold' }}>{accountName}</span>
-          <span style={{marginLeft: '20px'}}>{date}</span>
+        <div className={styles.reviewDetails}>
+          <span className={styles.accountName}>{accountName}</span>
+          <span>{date}</span>
         </div>
-        <p>{reviewText}</p>
+        <p className={styles.reviewText}>{reviewText}</p>
       </div>
     </div>
-      {/* <hr/> */}
-      </div>
   );
 }
 

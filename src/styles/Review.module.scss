@@ -1,0 +1,39 @@
+.reviewContainer {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+  }
+  
+  .profileImage {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .reviewHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ratingStars {
+    margin-left: 5px;
+  }
+  
+  .reviewDetails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .accountName {
+    font-weight: bold;
+  }
+  
+  .reviewText {
+    margin: 0;
+    font-size: 16px;
+  }
+  

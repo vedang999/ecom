@@ -1,0 +1,35 @@
+.tabToggleContainer {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  
+  .tabHeader {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .activeTab {
+    color: #DD3030;
+  }
+  
+  .inactiveTab {
+    color: #000000;
+  }
+  
+  .tabSpace {
+    padding: 10px 20px;
+  }
+  
+  .tabContent {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+  }
+  
