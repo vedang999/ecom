@@ -1,14 +1,6 @@
 // pages/product.js
 
 import styles from '../styles/Product.module.scss';
-// import image1 from '../pics/image1.png'; // adjust the path as necessary
-// import image2 from '../pics/image2.png'; // adjust the path as necessary
-// import image3 from '../pics/image3.png'; // adjust the path as necessary
-// import image4 from '../pics/image4.png'; // adjust the path as necessary
-import rel1 from '../pics/rel1.png'; // adjust the path as necessary
-import rel2 from '../pics/rel2.png'; // adjust the path as necessary
-import rel3 from '../pics/rel3.png'; // adjust the path as necessary
-import rel4 from '../pics/rel4.png'; // adjust the path as necessary
 import red1 from '../pics/red1.png'; // adjust the path as necessary
 import download from '../pics/download.png'; // adjust the path as necessary
 import share from '../pics/share.png'; // adjust the path as necessary
@@ -25,6 +17,7 @@ import DescriptionToggle from './desc';
 import Info from './Info'
 import RnQ from './RnQ'
 import HeartButton from './HeartButton';
+import Related1 from './Related1';
 const Product = () => {
   return (
     <div className={styles.container}>
@@ -132,29 +125,17 @@ const Product = () => {
         <img src={red1} alt="point" />
 
                Related Items</h3>
-          <div className={styles.items}>
-            <div className={styles.item}>
-              <img src={rel1} alt="Related Item 1" />
-
-              <p>HAVIT HV-G92 Gamepad</p>
-              <p>$120</p>
-            </div>
-            <div className={styles.item}>
-            <img src={rel2} alt="Related Item 2" />
-            <p>AK-900 Wired Keyboard</p>
-              <p>$960</p>
-            </div>
-            <div className={styles.item}>
-            <img src={rel3} alt="Related Item 3" />
-              <p>IPS LCD Gaming Monitor</p>
-              <p>$370</p>
-            </div>
-            <div className={styles.item}>
-            <img src={rel4} alt="Related Item 4" />
-              <p>RGB Liquid CPU Cooler</p>
-              <p>$160</p>
-            </div>
-          </div>
+               <Related1/>
+               <br></br>
+               <br></br>
+               <br></br>
+               <br></br>
+               <Related1/>
+               <br></br>
+               <br></br>
+               <br></br>
+               <br></br>
+          
         </div>
       </main>
       <footer className={styles.footer}>

@@ -20,7 +20,8 @@ function AddToCartButton() {
         cursor: 'pointer',
         border: 'none',
         borderRadius: '5px',
-        position: 'relative',
+        position: 'sticky',
+        // zIndex: -1, // Add zIndex to ensure it stays above other elements
         overflow: 'hidden',
       }}
     >

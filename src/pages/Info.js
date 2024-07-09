@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function AdditionalInfoToggle() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const toggleInfo = () => {
     setIsExpanded(!isExpanded);
