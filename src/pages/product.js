@@ -1,4 +1,5 @@
 // pages/product.js
+import React, { useRef } from 'react';
 
 import styles from '../styles/Product.module.scss';
 import red1 from '../pics/red1.png'; // adjust the path as necessary
@@ -21,11 +22,17 @@ import Related1 from './Related1';
 import StarRating from './StarRating';
 import Carticon from './carticon'
 const Product = () => {
+  const section2Ref = useRef(null);
+
+  const scrollToSection2 = () => {
+    section2Ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     // <div className={styles.container}>
     <div>
       <header className={styles.header}>
         <div className={styles.topBar}>
+          <p>|</p>
           <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! ShopNow</p>
           <div>
             <select>
@@ -64,7 +71,9 @@ const Product = () => {
             <h2>Havic HV G-92 Gamepad</h2>
             <div className={styles.rating}>
               <span>⭐⭐⭐⭐⭐</span>
-              <span>(150 Reviews)</span>
+              <span>
+                <a href="#" onClick={scrollToSection2}>(150 Reviews)</a>
+              </span>
               {/* <StarRating rating={3.5} totalReviews={150} /> */}
               <span className={styles.inStock}>In Stock</span>
             </div>
@@ -127,9 +136,11 @@ const Product = () => {
           </div>
 
         </div>
-        <RnQ/>
+        <div ref={section2Ref}>
+        <RnQ />
+        </div>
 
-        <div className={styles.relatedItems}>
+        <div className={styles.relatedItems} >
 
           <h3>
         <img src={red1} alt="point" />

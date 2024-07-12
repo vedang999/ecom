@@ -9,7 +9,7 @@ function AddReview({ onAddReview }) {
   };
 
   const [profileImage, setProfileImage] = useState('');
-  const [rating, setRating] = useState(1);
+  const [rating, setRating] = useState(4);
   const [accountName, setAccountName] = useState('proxy');
   const [date, setDate] = useState(getCurrentDate());
   const [reviewText, setReviewText] = useState('');
@@ -25,7 +25,7 @@ function AddReview({ onAddReview }) {
     };
     onAddReview(newReview);
     setProfileImage('');
-    setRating(1);
+    setRating(4);
     setAccountName('proxy');
     setDate(getCurrentDate());
     setReviewText('');
