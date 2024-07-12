@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import success from '../pics/success.png'; // adjust the path as necessary
+import success from '../pics/success.png'; // Adjust the path as necessary
 
 function AddToCartButton() {
   const [isClicked, setIsClicked] = useState(false);
@@ -13,34 +13,29 @@ function AddToCartButton() {
       onClick={handleClick}
       style={{
         padding: '0px',
-        width: '100px', // Set a fixed width for the button
-        height: '36px', // Set a fixed height for the button
+        width: '100px',
+        height: '36px',
         backgroundColor: isClicked ? '#F5E5FF' : '#DB4444',
         color: isClicked ? 'transparent' : 'white',
         cursor: 'pointer',
         border: 'none',
         borderRadius: '5px',
-        position: 'sticky',
-        // zIndex: -1, // Add zIndex to ensure it stays above other elements
+        // position: 'relative', // You can optionally add this if necessary
         overflow: 'hidden',
       }}
     >
-      {isClicked ? (
+      {isClicked && (
         <img
           src={success} // Replace with actual path to your image
           alt="Added to Cart"
-          style={{            
-             position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            maxWidth: '100%',
-            maxHeight: '100%',
+          style={{
+            width: '100%', // Ensure the image takes up 100% of the button's width
+            height: '100%', // Ensure the image takes up 100% of the button's height
+            objectFit: 'contain', // Maintain aspect ratio and fit within the button
           }}
         />
-      ) : (
-        'Add to Cart'
       )}
+      {!isClicked && 'Add to Cart'}
     </button>
   );
 }

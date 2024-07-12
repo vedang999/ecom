@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function ColorRadioButtons() {
-  const [selectedColor, setSelectedColor] = useState('');
+  const [selectedColor, setSelectedColor] = useState('green');
 
   const handleColorChange = (color) => {
     setSelectedColor(color);

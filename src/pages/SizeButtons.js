@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function SizeButtons() {
-  const [selectedSize, setSelectedSize] = useState('');
+  const [selectedSize, setSelectedSize] = useState('M');
 
   const handleSizeClick = (size) => {
     setSelectedSize(size);

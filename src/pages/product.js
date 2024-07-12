@@ -18,6 +18,8 @@ import Info from './Info'
 import RnQ from './RnQ'
 import HeartButton from './HeartButton';
 import Related1 from './Related1';
+import StarRating from './StarRating';
+import Carticon from './carticon'
 const Product = () => {
   return (
     // <div className={styles.container}>
@@ -43,7 +45,8 @@ const Product = () => {
           <div className={styles.searchCart}>
             <input type="text" placeholder="What are you looking for?" />
             <button>❤️</button>
-            <button>🛒</button>
+            {/* <button>🛒</button> */}
+            <Carticon count={4} />
           </div>
         </nav>
         <hr></hr>
@@ -62,6 +65,7 @@ const Product = () => {
             <div className={styles.rating}>
               <span>⭐⭐⭐⭐⭐</span>
               <span>(150 Reviews)</span>
+              {/* <StarRating rating={3.5} totalReviews={150} /> */}
               <span className={styles.inStock}>In Stock</span>
             </div>
             <div className={styles.price}>
@@ -91,11 +95,12 @@ const Product = () => {
               </div >
               <div style={{ display: 'flex', paddingRight: '10px' }}>
                 <div style={{ marginRight: '10px' }}>
+                {/* <div> */}
                   <BuyButton />
                 </div>
-              <div>
-                <AddToCartButton />
-              </div>
+                <div>
+                  <AddToCartButton />
+                </div>
             </div>
             </div>
 

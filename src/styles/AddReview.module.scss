@@ -1,0 +1,44 @@
+.addReviewForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+  
+      input, textarea {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      .stars {
+        display: flex;
+        gap: 0.25rem;
+  
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  
+    button {
+      // padding: 0.75rem;
+      font-size: 1rem;
+      background-color: #b81616;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      height: 25px;
+      align-self: flex-start;
+    }
+  }
+  

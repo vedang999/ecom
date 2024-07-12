@@ -163,7 +163,7 @@
         text-align: left; /* Ensure text content is aligned to the left */
         
         h2 {
-          font-size: 20px;
+          font-size: 30px;
           margin: 0 0 10px;
         }
         .rating {
@@ -173,7 +173,7 @@
             margin-right: 10px;
           }
           .inStock {
-            color: green;
+            color: rgb(10, 187, 10);
           }
         }
         .price {
@@ -372,6 +372,14 @@
     }
     .product {
       display: block; /* Change to block layout for mobile */
+      .details{
+          h2 {
+            font-size: 20px;
+          }
+      }
+    }
+    span {
+      font-size: 10px;
     }
   }
 }

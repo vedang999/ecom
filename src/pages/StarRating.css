@@ -1,0 +1,24 @@
+.star {
+    font-size: 24px;
+    color: #d3d3d3;
+    display: inline-block;
+    margin: 0; /* Remove any default margins */
+}
+
+.star.filled {
+    color: #ffc107;
+}
+
+.star.half::before,
+.star.half::after {
+    content: '★';
+    display: inline-block;
+    color: #ffc107;
+    width: 50%;
+    overflow: hidden;
+    margin: 0; /* Remove margin */
+}
+
+.star.half::after {
+    color: #d3d3d3;
+}
